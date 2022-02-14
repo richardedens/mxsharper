@@ -1,0 +1,66 @@
+{
+    "name": "mx2ng",
+    "version": "0.1.0",
+    "preferGlobal": true,
+    "description": "The mxsharper project is a NodeJS cli application that can harvest a Mendix application model and output a typescript project out of it.",
+    "engines": {
+        "node": ">=0.9.9"
+    },
+    "engine-strict": true,
+    "bin": {
+        "mx2ng": "./bin/mxsharper"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/richardedens/mxsharper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/richardedens/mxsharper/issues"
+    },
+    "keywords": [
+        "mxsharper",
+        "angular",
+        "process automation",
+        "mendix",
+        "mendixmodelsdk"
+    ],
+    "author": "Gerhard Richard Edens",
+    "license": "MIT",
+    "homepage": "https://www.mxsharper.com/",
+    "nodemonConfig": {
+        "restartable": "rs",
+        "ignore": [
+            "node_modules/**/node_modules"
+        ],
+        "delay": "2500",
+        "env": {
+            "NODE_ENV": "development",
+            "PORT": 3000
+        }
+    },
+    "dependencies": {
+        "clear": "^0.1.0",
+        "figlet": "^1.5.2",
+        "mendixmodelsdk": "^4.59.0",
+        "mendixplatformsdk": "^4.1.1",
+        "prompts": "^2.4.2",
+        "when": "^3.7.8"
+    },
+    "devDependencies": {
+        "@types/chalk": "^2.2.0",
+        "@types/clear": "^0.1.2",
+        "@types/figlet": "^1.5.4",
+        "@types/mendixmodelsdk": "^0.8.1",
+        "@types/morgan": "^1.9.3",
+        "@types/node": "^12.20.46",
+        "@types/node-sass-middleware": "0.0.31",
+        "@types/prompts": "^2.0.14",
+        "@types/when": "^2.4.34",
+        "ts-node": "^8.10.2",
+        "tslint": "^5.20.1",
+        "typescript": "^3.9.10"
+    }
+}

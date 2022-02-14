@@ -1,0 +1,5 @@
+node_modules
+.mendix
+temp
+spec
+e2e

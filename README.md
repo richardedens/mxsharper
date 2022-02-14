@@ -1,2 +1,2 @@
-# mxsharper
-The MxSharper CLI will get a definition of your Mendix application into code. MxSharper can be used to create code from Mendix applications.
+# mx2ng
+A tool to convert mendix pages to angularjs
